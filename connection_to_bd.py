@@ -1,6 +1,8 @@
+#! usr/bin/python3
+# -*- coding: utf-8 -*-
 import pyodbc
 
-server = 'server'
+server = 'server_ip'
 database = 'db-name'
 username = 'user'
 password = 'password'

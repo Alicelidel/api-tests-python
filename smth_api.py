@@ -30,7 +30,7 @@ def search_connection_post(user, password, params):
         return response
 
 
-def doc_connection(user, password, params):
+def max_connection(user, password, params):
     try:
         url = 'http://address/smth2'
         r = requests.get(url, auth=HTTPBasicAuth(user, password), params=params)
@@ -72,8 +72,8 @@ def main():
     print(search_resp)
 
     params = {'id': '1'}
-    doc_resp = doc_connection(user, password, params)
-    print(doc_resp)
+    max_resp = max_connection(user, password, params)
+    print(max_resp)
 
     scan_resp = export_connection(user, password, params)
     print(scan_resp)
